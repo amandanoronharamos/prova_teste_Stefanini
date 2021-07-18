@@ -1,0 +1,138 @@
+#language:pt
+
+HISTORIA
+
+COMO usuário do sistema 
+EU QUERO utilizar o site
+PARA que eu possa me cadastrar
+
+=================================================================
+
+TESTE 1
+
+DADO que eu não preenchi o campo nome
+E preenchi o campo e-mail  
+E preenchi o campo senha 
+QUANDO eu clicar no botão cadastrar
+ENTÃO deve aparecer uma mensagem de erro no campo nome
+
+=================================================================
+
+TESTE 2
+
+DADO que eu não preenchi o campo e-mail
+E preenchi o campo nome
+E preenchi o campo senha 
+QUANDO eu clicar no botão cadastrar
+ENTÃO deve aparecer uma mensagem de erro no campo e-mail
+
+==================================================================
+
+TESTE 3 
+
+DADO que eu não preenchi o campo senha
+E preenchi o campo nome
+E preenchi o campo e-mail 
+QUANDO eu clicar no botão cadastrar
+ENTÃO deve aparecer uma mensagem de erro no campo senha
+
+===================================================================
+
+TESTE 4
+
+DADO que eu não preenchi o campo nome
+E não preenchi o campo e-mail
+E não preenchi o campo senha 
+QUANDO eu clicar no botão cadastrar
+ENTÃO deve aparecer uma mensagem de erro no campo nome 
+E deve aparecer uma mensagem de erro no campo e-mail
+E deve aparecer uma mensagem de erro no campo senha
+===================================================================
+
+TESTE 5
+
+DADO que eu não preenchi o campo nome
+E não preenchi o campo e-mail
+E preenchi o campo senha 
+QUANDO eu clicar no botão cadastrar
+ENTÃO deve aparecer uma mensagem de erro no campo nome 
+E deve aparecer uma mensagem de erro no campo e-mail
+
+==================================================================
+
+TESTE 6
+
+DADO que eu não preenchi o campo nome
+E não preenchi o campo senha
+E preenchi o campo e-mail
+QUANDO eu clicar no botão cadastrar
+ENTÃO deve aparecer uma mensagem de erro no campo nome 
+E deve aparecer uma mensagem de erro no campo senha
+
+====================================================================
+
+TESTE 7
+
+DADO que eu não preenchi o campo e-mail
+E não preenchi o campo senha 
+E preenchi o campo nome
+QUANDO eu clicar no botão cadastrar
+ENTÃO deve aparecer uma mensagem de erro no campo e-mail
+E deve aparecer uma mensagem de erro no campo senha
+
+========================================================================
+
+TESTE 8
+
+DADO que eu preenchi o campo nome 
+E preenchi o campo e-mail
+E preenchi o campo senha
+E não coloquei um nome completo 
+QUANDO eu clicar no botão cadastrar
+ENTÃO o sistema deve exibir a mensagem "Por favor, insira um nome completo." para o campo nome
+
+=========================================================================
+
+TESTE 9
+
+DADO que eu preenchi o campo e-mail 
+E preenchi o campo nome
+E preenchi o campo senha
+E não coloquei um e-mail válido 
+QUANDO eu clicar no botão cadastrar
+ENTÃO o sistema deve exibir a mensagem "Por favor, insira um e-mail válido." para o campo e-mail
+
+===========================================================================
+
+TESTE 10
+
+DADO que eu preenchi o campo senha
+E preenchi o campo nome
+E preenchi o campo e-mail
+E não coloquei uma senha com menos de 8 caracteres 
+QUANDO eu clicar no botão cadastrar
+ENTÃO o sistema deve exibir a mensagem  "A senha deve conter ao menos 8 caracteres." para o campo senha
+
+============================================================================
+
+TESTE 11
+
+DADO que eu preenchi o campo nome com um nome válido
+E preenchi o campo e-mail com um e-mail válido
+E preenchi o campo senha com uma senha válida 
+QUANDO eu clicar no botão cadastrar
+ENTÃO o sistema deve exibir abaixo do formulário uma tabela com os dados do usuários cadastrados ordenados pelo ID 
+E mostrar a opção excluir para cada usuário cadastrado
+
+============================================================================
+
+TESTE 12 
+
+DADO que é mostrado a tabela com os usuários cadastrados
+E existe a opção excluir para cada usuário 
+QUANDO eu clicar no botão excluir de um dado usuário
+ENTÃO o sistema deve remover o usuário e seus dados 
+E manter a ordenação anterior caso tenha mais de um usuário cadastrado
+
+
+
